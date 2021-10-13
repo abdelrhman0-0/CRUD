@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        
+            <div class="w-75 mx-auto my-5">
+               <input id="ProductName" class="form-control mt-3 p-3" required type="text" placeholder="Product Name">
+               <div id="nameAlert" class="alert alert-danger mt-1 w-50 d-none">Product name should start with capital letter and 2-12 small letter</div>
+                <input id="productPrice" class="form-control  p-3 mt-3" required type="email" placeholder="Product Price">
+                <div id="priceAlert" class="alert alert-danger mt-1 w-50 d-none">Price should be numbers</div>
+
+                <input id="productCategory" class="form-control p-3 mt-3" required type="text" placeholder="Product Category">
+
+                <input id="productDesc" class="form-control p-3 mt-3" required type="text" placeholder="Product Description">
+                <button  id="addBtn" disabled  class="btn btn-lg mt-3 btn-primary">Add Product</button>   
+
+            </div>
+
+
+            <div class="container-fluid py-5">
+                <input type="text" placeholder="Search" class="form-control w-75 m-auto my-3">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody id="tableBody">
+                        
+                    </tbody>
+                </table>
+            
+         
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
